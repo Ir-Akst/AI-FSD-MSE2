@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
-
+const API = "https://your-backend.onrender.com";
 export const registerUser = (data) =>
   axios.post(`${API}/api/register`, data);
 
