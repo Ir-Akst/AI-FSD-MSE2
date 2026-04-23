@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API = "https://ai-fsd-mse2-backend.onrender.com"; // ✔ use your actual linkexport const registerUser = (data) =>
+const API = "https://ai-fsd-mse2-backend.onrender.com";
+
+export const registerUser = (data) =>
   axios.post(`${API}/api/register`, data);
 
 export const loginUser = (data) =>
